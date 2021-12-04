@@ -39,7 +39,7 @@ const Header = () => {
 			
 			<motion.div className="header">
 				<motion.div className="logo">
-					<a href="/"><img src="/logo.png" alt="logo" /></a>
+					<a href="/"><img src="logo.png" alt="logo" /></a>
 				</motion.div>
 				<motion.nav className="nav" onClick={handleClick}>
 					<motion.li 
