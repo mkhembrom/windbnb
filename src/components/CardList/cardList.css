@@ -1,0 +1,14 @@
+.cardList{
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 840px) {
+  .cardList{
+  	justify-content: center;
+  }
+}
