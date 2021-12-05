@@ -5,7 +5,7 @@ import { StoreContext } from '../../Context/storeContext';
 import "react-tippy/dist/tippy.css";
 import {Tooltip} from 'react-tippy';
 import {Switch} from '../Switch';
-
+import {motion} from 'framer-motion';
 
 export const Model = ({setOpen}) => {
 
@@ -119,7 +119,7 @@ export const Model = ({setOpen}) => {
 					</Tooltip>
 				</li>
 				<li className="nav-list-model">
-					<button className="btn" onClick={() => handleSearchLoaction(guest)}><i className="fas fa-search fa-search-model"></i>Search</button>
+					<motion.button whileHover={{scale: 1.2}} className="btn" onClick={() => handleSearchLoaction(guest)}><motion.i whileHover={{scale: 1.5}} className="fas fa-search"></motion.i><span>Search</span></motion.button>
 				</li>
 			</nav>
 			{tab === "location" ? <Location /> : ''}

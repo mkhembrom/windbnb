@@ -37,10 +37,13 @@ const Header = () => {
 	return (
 		<>
 			
-			<motion.div className="header">
+			
+				
+				<motion.div className="header">
 				<motion.div className="logo">
 					<a href="/"><img src="logo.png" alt="logo" /></a>
 				</motion.div>
+				
 				<motion.nav className="nav" onClick={handleClick}>
 					<motion.li 
 						className="nav-list"> 
@@ -55,7 +58,10 @@ const Header = () => {
 						<i className="fas fa-search"></i>
 					</motion.li>
 				</motion.nav>
-			</motion.div>
+				
+				</motion.div>
+			
+			
 			{open && <Model setOpen={setOpen}/>}
 		</>
 	);

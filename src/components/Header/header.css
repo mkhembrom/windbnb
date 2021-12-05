@@ -9,6 +9,10 @@
 	transition: all 1s ease;
 }
 
+.header .ext{
+
+}
+
 .header.active{
 	margin-bottom: 400px;
 }
@@ -40,6 +44,8 @@
 
 .nav-list:last-child {
 	border-right: none;
+	align-items: center;
+	justify-content: center;
 }
 
 .fa-search{
@@ -59,15 +65,16 @@
   	margin-top: 2rem;
   	width: 100%;
   	align-items: center;
-  	justify-content: center;
+  	justify-content: space-evenly;
   }
 
   .nav-list:last-child {
-	border-right: none;
-	
+		border-right: none;
+		
   }
-  .fa-search{
+  .nav-list.fa-search{
   	width: 100%;
   	align-items: center;
+  	justify-content: center;
   }
 }

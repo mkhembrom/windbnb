@@ -124,6 +124,11 @@
 	cursor: pointer;
 }
 
+.options:hover{
+	color: #EA5756;
+	transition: color 0.2s ease-in;
+}
+
 .fa-map-marker-alt{
 	margin-right: 10px;
 	color: grey;
@@ -143,44 +148,66 @@
 
 @media only screen and (max-width: 600px) {
   .model{
-  margin-top: 2.1rem;
+
+  	position: absolute;
+  	top: 0;
+
   }
 
   .nav-model{
-  	height: 80px;
+  	margin: 2.3rem 0;
+  	border-radius: 10px;
   	display: flex;
   	align-items: center;
-  	justify-content: center;
+  	justify-content: flex-start;
   }
 
   .location-text{
   	display: flex;
-	align-items: flex-start;
-	justify-content: center;
+		align-items: flex-start;
+		justify-content: center;
+  }
+
+  .nav-list-model{
+  	/*flex: 1;*/
+  }
+
+  .nav-list-model:first-child{
+  	flex: 2;
+  	border-radius: 10px;
   }
 
   .nav-list-model:last-child {
   	height: 100%;
+  	flex-wrap: wrap;
   	margin: 0;
+  	/*padding: 1rem;*/
+		border-right: none;
+		align-items: flex-start;
+		width: 50px;
+  }
+  
+  .nav-list-model .btn{
+  	
+  	width: inherit;
   	padding: 1rem;
-	border-right: none;
-	align-items: flex-start;
+  	color: #EA5756;
+  	background-color: #fff;
 	
+	border: none;
+	align-items: center;
+	justify-content: center;
+	
+	cursor: pointer;
   }
 
-  .btn{
-  	width: 100%;
-  	display: flex;
-  	align-items: center;
-  	justify-content: center;
+  .nav-list-model .btn .fa-search{
+  	font-size: 1.2rem;
+  	color: #EA5756;
   }
-
-   .nav-list-model:last-child .fa-search-model{
-	border-right: none;
-	margin: 0;
+   .nav-list-model:last-child .btn span{
 	
+		display: none;
   }
-  .fa-search-model{
-  	display: hidden;
-  }
+  
 }
