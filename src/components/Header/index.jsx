@@ -38,7 +38,7 @@ const Header = () => {
 		<>
 			
 			
-				
+				{!open && 
 				<motion.div className="header">
 				<motion.div className="logo">
 					<a href="/"><img src="logo.png" alt="logo" /></a>
@@ -60,11 +60,13 @@ const Header = () => {
 				</motion.nav>
 				
 				</motion.div>
+			}
 			
-			
-			{open && <Model setOpen={setOpen}/>}
+			{open && <div className="WraperModel"><Model setOpen={setOpen}/></div>}
 		</>
 	);
 };
 
 export default Header;
+
+

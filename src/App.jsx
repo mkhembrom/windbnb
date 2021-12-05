@@ -2,6 +2,7 @@ import './app.css';
 import CardList from './components/CardList'; 
 import Hero from './components/Hero';
 import Header from './components/Header';
+import {Author} from './components/Author';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Header />
         <Hero />
         <CardList />
+        <Author />
       </div>
     </div>
   );

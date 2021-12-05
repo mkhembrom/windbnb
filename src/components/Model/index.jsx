@@ -71,7 +71,7 @@ export const Model = ({setOpen}) => {
 			 {/* onClick={() => handleSearch(item)} */}
 				<nav className="selectLocation">
 					{locationOption.map((item, index) => {
-						return <li key={index} className="options" onClick={() => handleSearch(item)}><i className="fas fa-map-marker-alt"></i>{item}, Finland</li>;
+						return <div key={index}><motion.li whileHover={{x: 30}} className="options" onClick={() => handleSearch(item)}><i className="fas fa-map-marker-alt"></i>{item}, Finland</motion.li></div>;
 					})}
 				</nav>
 			</>
@@ -112,7 +112,7 @@ export const Model = ({setOpen}) => {
 					<Tooltip title="Search by number of guests">
 					<div className="location-text">
 						<div className="location-heading">Guest</div>
-						<div>
+						<div className="gguest">
 						{guest} guests
 						</div>
 					</div>

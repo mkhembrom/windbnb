@@ -1,21 +1,20 @@
 .model{
+	
 	padding: 10px 0;
 	width: 85%;
 	margin: 1rem auto;
-	height: 400px;
-	z-index: 999;
-	position: fixed;
-	top: 0;
 	
+	z-index: 999;
+
 }
 
 .nav-model{
 	list-style: none;
 	display: flex;
-	border-radius: 20px;
+	border-radius: 10px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	cursor: pointer;
-	width: 100%;
+	
 	text-align: center;
 	background-color: #fff;
 	color: grey;
@@ -45,6 +44,7 @@
 	background-color: #fff;
 	border: 1px solid transparent;
 	border-right: 1px solid #F3F3F2;
+	border-radius: 10px;
 }
 
 .nav-active{
@@ -85,35 +85,39 @@
 }
 
 .selectLocation{
-	position: absolute;
-	background-color: #fff;
+	
+		background-color: #fff;
 	  border: none;
 	  padding: 0 1em 0 0;
 	  margin: 0;
 	  width: 100%;
-	  margin-top: 1rem;
-	  
+	 	align-items: flex-start;
+	  height: 300px;
 	  border-radius: 10px;
 	  cursor: inherit;
-  line-height: inherit;
-  outline: none;
+  	line-height: inherit;
+  	outline: none;
 }
 
 .selectSwitch{
-	position: absolute;
-	background-color: #fff;
+	
+		align-items: flex-start;
+		background-color: #fff;
 	  border: none;
 	  padding: 0 1em 0 0;
 	  margin: 0;
 	  width: 100%;
-	  margin-top: 1rem;
-	  
-	  
+	  height: 300px;
 	  border-radius: 10px;
 	  cursor: inherit;
-  line-height: inherit;
-  outline: none;
+  	line-height: inherit;
+  	outline: none;
 }
+
+ .gguest{
+ 	display: inline-block;
+
+ }
 
 .options{
 	list-style: none;
@@ -149,17 +153,18 @@
 @media only screen and (max-width: 600px) {
   .model{
 
-  	position: absolute;
-  	top: 0;
+  	border-radius: 10px;
 
   }
 
   .nav-model{
-  	margin: 2.3rem 0;
+  	
   	border-radius: 10px;
   	display: flex;
   	align-items: center;
   	justify-content: flex-start;
+  	background-color: #fff;
+  	
   }
 
   .location-text{
@@ -169,7 +174,7 @@
   }
 
   .nav-list-model{
-  	/*flex: 1;*/
+  	border-radius: 10px;
   }
 
   .nav-list-model:first-child{
@@ -177,19 +182,24 @@
   	border-radius: 10px;
   }
 
+ .gguest{
+ 	width: 70px;
+ 	display: flex;
+ 	justify-content: flex-start;
+ }
+
   .nav-list-model:last-child {
   	height: 100%;
-  	flex-wrap: wrap;
-  	margin: 0;
+  	
   	/*padding: 1rem;*/
 		border-right: none;
 		align-items: flex-start;
-		width: 50px;
+		
   }
   
   .nav-list-model .btn{
   	
-  	width: inherit;
+  	width: 10px;
   	padding: 1rem;
   	color: #EA5756;
   	background-color: #fff;
